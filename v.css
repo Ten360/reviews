@@ -1,0 +1,90 @@
+.text{
+	text-align: center;
+}
+.body {
+	background-color: #121826;
+	background-image: url("C:/Users/Антон/Downloads/simple-feature-section-master (1)/simple-feature-section-master/resources/Background_image@3x.png");
+}
+.paragraph{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+h1.text  {
+	margin-top: 55px;
+	color: #e5e7eb;
+	font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+	font-size: 40px;
+}
+h6.text {
+	color: #9DA3AE;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+	padding-top: 20px;
+}
+.box {
+	display: inline-block;
+	height: 450px;
+	width: 315px;
+	background-color: #212936;
+	margin-top: 50px;
+	border-radius: 20px;
+}
+.all_box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.content {
+	margin: 22px 25px;
+}
+.smile {
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	font-size: 25px;
+}
+.smile_1 {
+	background-color: #FCEED8;
+	}
+.smile_2 {
+	background-color: #DEE9FC;
+}
+.smile_3 {
+	background-color: #FBE5E6;	
+}
+h5 {
+	color: #e5e7eb;
+	font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+	font-size: 40px;
+}
+.content_text {
+	color: #d2d5da;
+	padding-top: 13px;
+	font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+img {
+	border-radius: 20px;
+	padding-top: 5px;
+	width: 270px;
+	height: 200px;
+}
+@media (max-width: 1024) {
+	.all_box {
+		align-items: center;
+	}
+}
