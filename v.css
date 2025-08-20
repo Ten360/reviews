@@ -1,0 +1,231 @@
+.text {
+	text-align: center;
+}
+
+.container {
+	text-align: left;
+}
+.paragraph {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1.text {
+	margin-top: 55px;
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 40px;
+}
+
+h6.text {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	padding-top: 20px;
+}
+
+.all_box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.content {
+	margin: 22px 25px;
+}
+
+.smile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	font-size: 25px;
+}
+
+.smile_1 {
+	background-color: #FCEED8;
+}
+
+.smile_2 {
+	background-color: #DEE9FC;
+}
+
+.smile_3 {
+	background-color: #FBE5E6;
+}
+
+h5 {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 40px;
+}
+
+.content_text {
+	padding-top: 13px;
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+img {
+	border-radius: 20px;
+	padding-top: 5px;
+	width: 270px;
+	height: 200px;
+}
+
+@media (max-width: 1024) {
+	.all_box {
+		align-items: center;
+	}
+}
+
+/* .container:has(.thema-control:checked) .box {
+  --white: #000;
+}
+.box {
+	--white: #fff;
+	display: inline-block;
+	height: 450px;
+	width: 315px;
+	border: 1px solid var(--white);
+	margin-top: 50px;
+	border-radius: 20px;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+.thema {
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 50%;
+	background-image: url(img/moon.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px;
+}
+.thema-control:checked + .thema {
+  background-image: url(img/moon.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.thema-control:disabled +.thema {
+  background-image: url(img/sun.jpg);
+	background-color: black;
+	background-position: center;
+	background-repeat: no-repeanpm install -g gulpt;
+	background-size: contain;
+}
+
+.thema-control {
+	border-radius: 50%;
+}
+.body {
+	--text: #fff;
+	--bc: #000;
+	background-color: var(--bc);
+	color: var(--text);
+}
+.body:has(.thema-control:checked) {
+	--text: #000000;
+	--bc: #ffffff;
+} */
+
+.body {
+	--text: #fff;
+	--bc: #000;
+	background-color: var(--bc);
+	color: var(--text);
+	margin: 0;
+	padding: 20px;
+	min-height: 100vh;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.body:has(.thema-control:checked) {
+	--text: #000000;
+	--bc: #ffffff;
+}
+
+.thema-control, .thema {
+	float: left;
+}
+
+.box {
+	--white: #fff;
+	display: inline-block;
+	height: 450px;
+	width: 315px;
+	border: 1px solid var(--white);
+	margin-top: 50px;
+	border-radius: 20px;
+	transition: border-color 0.3s ease;
+}
+
+.container:has(.thema-control:checked) .box {
+	--white: #000;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.thema {
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 50%;
+	background-image: url(img/moon.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.thema-control:checked+.thema {
+	background-image: url(img/sun.jpg);
+	background-position: center;
+	background-repeat: no-repeat;	
+	background-size: contain;
+	background-color: #000;
+}
+
+.thema-control:disabled+.thema {
+	background-image: url(img/moon);
+	background-color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.thema-control {
+	border-radius: 50%;
+}
